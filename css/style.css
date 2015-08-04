@@ -1,19 +1,32 @@
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+}
+
+header {
+	box-shadow: 0px 0px 10px black;
+	-moz-box-shadow: 0px 0px 10px black;
+	-o-box-shadow: 0px 0px 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+}
+
 .done-true {
 	text-decoration: line-through;
 	color: grey;
 }
 
-header {
-	background: darkblue;
+h1 {
+	background: #2165c3;
 	color: white;
 	padding: 20px;
 	font-size: 20pt;
 	text-transform: uppercase;
-}
-
-.app-container {
-	padding: 20px;
-	
+	font-weight: 700;
 }
 
 .app-container li {
@@ -36,13 +49,36 @@ li {
 }
 
 li:nth-child(even) {
-	background: lightgrey;
+	background: #e6f0ff;
 }
 
 input {
-	padding: 5px 20px;
+	padding: 3px 20px 6px;
+	background: #6faabd;
+	border: 2px solid white;
+	color: white;
 }
 
 button {
 	background: white;
+}
+
+.todo-container {
+	margin-top: 143px;
+}
+
+input::-webkit-input-placeholder {
+   color: lightblue;
+}
+
+input::-moz-placeholder { /* Firefox 18- */
+   color: lightblue;  
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: lightblue;  
+}
+
+input::-ms-input-placeholder {  
+   color: lightblue;  
 }

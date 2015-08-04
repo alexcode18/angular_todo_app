@@ -18,11 +18,11 @@ function TodoCtrl($scope) {
 		})
 	}
 
-	// $scope.editTodo = function() {
-	// 	if ($(this).hasClass('done-false')) {
-	// 		console.log('working');
-	// 	} else {
-	// 		console.log(this);
-	// 	}
-	// }
+	$scope.editTodo = function() {
+		if ($(this).hasClass('done-false')) {
+			console.log('working');
+		} else {
+			console.log(this);
+		}
+	}
 }
