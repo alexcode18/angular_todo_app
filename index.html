@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>To-Do List</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.angularjs.org/angular-1.0.0rc3.min.js"></script>
+	<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/todo.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div ng-controller="TodoCtrl" class="app-container">
+		<header>To-Do List ({{getTotalTodos()}})</header>
+		<div class="type-bar">
+			<a>
+				<form class="form-horizontal">
+					<input type="text" ng-model="formTodoText" ng-model-instant>
+					<button class="btn" ng-click="addTodo()"><i class="glyphicon glyphicon-plus"></i> Add</button>
+				</form>
+			</a>
+			<a>
+				<button class="btn btn-large"	ng-click="clearCompleted()"><i class="glyphicon glyphicon-trash"></i> Clear Completed</button>
+			</a>
+		</div>
+		<ul class="unstyled">
+			<li ng-repeat="todo in todos">
+				<input type="checkbox" ng-model="todo.done">
+				<span class="done-{{ todo.done }}" ng-click="editTodo()">{{ todo.text }}</span>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>

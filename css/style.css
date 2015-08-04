@@ -1,0 +1,48 @@
+.done-true {
+	text-decoration: line-through;
+	color: grey;
+}
+
+header {
+	background: darkblue;
+	color: white;
+	padding: 20px;
+	font-size: 20pt;
+	text-transform: uppercase;
+}
+
+.app-container {
+	padding: 20px;
+	
+}
+
+.app-container li {
+	list-style: none;
+}
+
+.type-bar {
+	background: lightblue;
+	padding: 20px;
+}
+
+.type-bar a {
+	display: inline-block;
+}
+
+li {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+li:nth-child(even) {
+	background: lightgrey;
+}
+
+input {
+	padding: 5px 20px;
+}
+
+button {
+	background: white;
+}
